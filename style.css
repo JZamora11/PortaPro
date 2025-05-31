@@ -1,0 +1,17 @@
+:root {
+    --green: #84a59d;
+    --pink-soft: #f5cac3;
+    --yellow: #f6bd60;
+    --terracota: #f28482;
+    --background-color: #f7ede2;
+    --color-text: #131313;
+}
+
+body {
+    font-family: "Ancizar Sans", sans-serif;
+    background-color: var(--background-color);
+    color: var(--color-text);
+}
+
+/* Color Pallete: #84a59d, #f5cac3, #f6bd60, #f28482, #f7ede2 */
+
