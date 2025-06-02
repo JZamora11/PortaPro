@@ -52,22 +52,16 @@ h4 {
 
     & .menu {
         width: 60%;
-        padding-right: 60px;
+        padding-right: 25px;
         color: #fff;
         font-size: 1.2em;
         display: flex;
         justify-content: end;
         align-items: center;
-    
-        & ul {
-            display: flex;
-            align-items: center;
-            list-style: none;
-            gap: 40px;
-            text-align: center;
-        }
 
-        & li a {
+        & a {
+            text-align: center;
+            margin: 0 15px;
             text-decoration: none;
             color: var(--background-color);
             transition: .3s;
@@ -147,7 +141,7 @@ main {
 
         & div {
             width: 25%;
-            background-color: #fff;
+            background-color: #fffbfb;
             border-radius: 15px;
             padding: 20px;
             margin: 0 10px;
@@ -215,7 +209,7 @@ main {
     & .basic-plan, .pro-plan {
         width: 350px;
         height: auto;
-        background-color: #fff;
+        background-color: #fffbfb;
         border-radius: 15px;
         align-content: center;
         padding-bottom: 40px;
@@ -325,11 +319,262 @@ main {
 
 /* RESPONSIVE DESIGN */
 @media screen and (max-width: 768px) {
-    body {
-        width: 50%;
+    .header1 {
+        display: flex;
+        flex-direction: column;
+
+        & .logo {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+
+            & img {
+                width: 40%;
+                margin: 0;
+                padding: 30px 0 0;
+            }
+        }
+
+        & .menu {
+            width: 100%;
+            justify-content: center;
+            margin: 15px 0 30px 0;
+            font-size: 1.1em;
+            padding: 0;
+
+            & a {
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .hero {
+        .hero1 {
+            display: flex;
+            flex-direction: column-reverse;
+
+            .left-info {
+                width: 100%;
+                text-align: center;
+                padding: 10px 0 30px 0;
+                
+                & h2 {
+                    font-size: 2.5em;
+                    padding: 0 30px;
+                }
+
+                & p {
+                    padding: 0 30px;
+                }
+
+                & a button {
+                    margin: 15px 0 0 0;
+                }
+            }
+
+            .ilustration {
+                width: 80%;
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+
+    h2 {
+        font-size: 1.8em;
+    }
+
+    .services {
+        .benefits {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            & div {
+                width: 35%;
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    }
+
+    .testimonies {
+        & .ana-lopez {
+            & img {
+                width: 150px;
+            }
+            & p {
+                margin: 0 30px;
+            }
+        }
+
+        & .juan-rios {
+            & img {
+                width: 150px;
+            }
+            & p {
+                margin: 0 30px;
+            }
+        }
+    }
+
+    .plans {
+        & .plans2 {
+            gap: 20px;
+
+            & .basic-plan, .pro-plan {
+                width: 40%;
+
+                & img {
+                    width: 80%;
+                }
+
+                & h3 {
+                    font-size: 1.6em;
+                    padding: 0 20px;
+                }
+
+                & p {
+                    font-size: 1.1em;
+                    padding: 0 20px;
+                }
+            }
+        }
+    }
+
+    .contact {
+        & form {
+            width: 80%;
+        }
+    }
+
+    .footer {
+        & .full-footer {
+            & .social-media {
+                & a button {
+                    margin: auto auto 30px auto;
+                }
+            }
+        }
     }
 }
 
 @media screen and (max-width: 480px) {
-    
+    .header1 {
+        & .logo {
+            & img {
+                width: 70%;
+            }
+        }
+
+        & .menu {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 15px 0 25px 0;
+            font-size: 1.2em;
+
+            & a {
+                margin: px 0;
+            }
+        }
+    }
+
+    .hero {
+        .hero1 {
+            .left-info {
+                padding: 10px 0 50px 0;
+                
+                & h2 {
+                    font-size: 2.2em;
+                    padding: 0 30px;
+                }
+
+                & p {
+                    font-size: 1.1em;
+                    padding: 0 30px;
+                }
+
+                & a button {
+                    margin: 15px 0 0 0;
+                }
+            }
+
+            .ilustration {
+                width: 100%;
+            }
+        }
+    }
+
+    h2 {
+        margin: 0 20px;
+    }
+
+    .services {
+        .benefits {
+            & div {
+                width: 70%;
+                margin: 10px 0;
+            }
+        }
+    }
+
+    .testimonies {
+        & .ana-lopez {
+            & img {
+                width: 125px;
+            }
+            & p {
+                margin: 8px 30px;
+            }
+        }
+
+        & .juan-rios {
+            & img {
+                width: 125px;
+            }
+            & p {
+                margin: 8px 30px;
+            }
+        }
+
+        & hr {
+        width: 70%;
+    }
+    }
+
+    .plans {
+        & .plans2 {
+            flex-direction: column;
+            margin: auto;
+            place-items: center;
+            width: 100%;
+
+            & .basic-plan, .pro-plan {
+                width: 70%;
+
+                & h3 {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+
+    .contact {
+        & form {
+            & button {
+                width: 60%;
+                padding: 10px 20px;
+            }
+        }
+    }
+
+    .footer {
+        & .full-footer {
+            & .copy {
+                font-size: 1em;
+                margin-bottom: 10px;
+            }
+        }
+    }
 }
